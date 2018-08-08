@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # import stuff
+import warnings
+warnings.filterwarnings('ignore')
 import os, sys, scipy.io, numpy as np
 from tvb.simulator.lab import *
 
