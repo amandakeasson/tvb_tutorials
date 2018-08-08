@@ -79,10 +79,8 @@ emp_fc = fisherz(emp_fc)
 
 sim_emp_corr = np.corrcoef(sim_fc.ravel(), emp_fc.ravel())[1, 0]
 
-##### calculate global variance
-gvar_bold = np.var(data,axis=0); gvar_bold = np.mean(gvar_bold)
 
 print('Sim-Emp FC Correlation = %0.4f' % sim_emp_corr)
 
 ##### SAVE MAT FILE
-scipy.io.savemat(results_fn, {'tavg_all': tavg_all, 'tavg_data': tavg_data, 'bold_data': data, 'bold_data_all': data_all, 'sim_fc': sim_fc, 'gvar_bold': gvar_bold, 'sim_emp_corr': sim_emp_corr})
+scipy.io.savemat(results_fn, {'bold_data': data, 'sim_fc': sim_fc, 'sim_emp_corr': sim_emp_corr})
