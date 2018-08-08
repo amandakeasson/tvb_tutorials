@@ -45,10 +45,6 @@ In the sim_run.py file, change the variables under the "THINGS TO CHANGE" headin
 
 python sim_run.py <subject> <global_coupling_value> <noise_value>
 
-if you add additional parameters:
-
-python sim_run.py <subject> <global_coupling_value> <noise_value> <new_param_1> <new_param_2> ... <new_param_last>
-
 ### 4) output:
 
 An output file will be saved which includes your simulation name, subject, and the values of the other input parameters, e.g. simtest1_subj01_1.0_0.001.mat
@@ -56,7 +52,6 @@ An output file will be saved which includes your simulation name, subject, and t
 ### 5) fit between simulated and empirical data
 
 The script will also print out the correlation between the simulation and empirical FC (this correlation will also be saved in the output .mat file). It also updates you on the simulation progress (every 10s of simulated data).
-
 
 
 ## TEST RUN:
