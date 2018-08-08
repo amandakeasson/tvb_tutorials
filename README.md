@@ -39,11 +39,11 @@ In the sim_run.py file, change the variables under the "THINGS TO CHANGE" headin
 
 * simmins: the length of your simulation in minutes (should be the same as the length of your empirical bold data)
 
-* dtval: the integration step size ("dtval. 0.5 seems to work well for the oscillator.
+* dtval: the integration step size 
 
 ### 3) run the script using the following command:
 
-python sim_run.py <subject> <global_coupling_value> <noise_value>
+python sim_run.py subject param1_value param2_value
 
 ### 4) output:
 
