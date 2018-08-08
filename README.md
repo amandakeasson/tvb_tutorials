@@ -1,4 +1,4 @@
-# TVB simulations in nipype
+# TVB simulation demo
 
 ## SETUP:
 ```
