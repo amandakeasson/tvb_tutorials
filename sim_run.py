@@ -32,6 +32,10 @@ results_fn = results_fn + '.mat'
 
 datamat = scipy.io.loadmat(indir + '/' + subj + '_connectivity.mat')
 
+sc_weights = datamat['sc_weights']
+tract_lengths = datamat['tract_lengths']
+emp_fc = datamat['fc']
+
 wm = connectivity.Connectivity(weights=sc_weights, tract_lengths=tract_lengths)
 wm_coupling = coupling.Linear(a = global_coupling)
 
